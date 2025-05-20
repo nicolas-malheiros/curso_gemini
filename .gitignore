@@ -1,0 +1,30 @@
+# 🐍 Ambientes virtuais
+Include/
+Lib/
+Scripts/
+
+# 🔐 Variáveis de ambiente
+.env
+
+# 🧪 Arquivos do Python (cache, bytecode, etc.)
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Arquivos de configuração do ambiente virtual
+pyvenv.cfg
+
+# 📄 Arquivos de pacotes Python
+*.egg-info/
+*.egg
+
+# 📦 Outros arquivos temporários
+*.log
+*.sqlite3
+
+# 🧑‍💻 IDEs e arquivos do sistema
+.vscode/
+.DS_Store
+Thumbs.db
