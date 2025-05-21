@@ -10,9 +10,18 @@ MODELO_ESCOLHIDO = "gemini-1.5-flash"
 
 prompt_sistema = "Liste apenas os nomes do produtos, e ofereça uma breve descrição."
 
+configuracao_modelo = {
+    "temperature" : 2.0,
+    "top_p" : 0.9,
+    "top_k" : 64,
+    "max_output_tokens" : 8192,
+    "response_mime_type" : "text/plain"
+}
+
 llm = genai.GenerativeModel(
     model_name=MODELO_ESCOLHIDO,
-    system_instruction=prompt_sistema
+    system_instruction=prompt_sistema,
+    generation_config=configuracao_modelo
 )
 
 pergunta = "Liste três produtos de moda sustentável para ir ao shopping."
